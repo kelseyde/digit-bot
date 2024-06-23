@@ -29,7 +29,6 @@ def load_data():
     """
     f = gzip.open("../data/mnist.pkl.gz")
     training_data, validation_data, test_data = pickle.load(f, encoding="latin1")
-    print(training_data)
     f.close()
     return training_data, validation_data, test_data
 
